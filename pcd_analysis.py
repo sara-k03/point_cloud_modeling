@@ -6,15 +6,15 @@ import plotly.graph_objects as go
 # change the file name for where your data is located
 pcd = o3d.io.read_point_cloud("Datasets/point_cloud_data.pcd")
 #stores point clouds in array
-out_arr = np.asarray(pcd.points)  
+output = np.asarray(pcd.points)  
 
 # 3D Scatter Plot
 fig = go.Figure( data = [ go.Scatter3d (
-    x = out_arr[:, 0],  # X-coordinates
-    y = out_arr[:, 1],  # Y-coordinates
-    z = out_arr[:, 2],  # Z-coordinates
+    x = output[:, 0],  # X-coordinates
+    y = output[:, 1],  # Y-coordinates
+    z = output[:, 2],  # Z-coordinates
     mode = 'markers',
-    marker = dict(size=2, color=out_arr[:, 2], colorscale='Viridis', opacity=0.8)
+    marker = dict(size=2, color=output[:, 2], colorscale='Viridis', opacity=0.8)
 )])
 
 # Labels & rotation
