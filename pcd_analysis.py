@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 
 # reads point cloud from pcd
 # change the file name for where your data is located
-pcd = o3d.io.read_point_cloud("/Users/sarayukondaveeti/Desktop/point_cloud_modeling/Datasets/point_cloud_data.pcd")
+pcd = o3d.io.read_point_cloud("Datasets/point_cloud_data.pcd")
 #stores point clouds in array
 out_arr = np.asarray(pcd.points)  
 
