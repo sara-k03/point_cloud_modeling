@@ -1,2 +1,2 @@
-# point_cloud_modeling
+# Point Cloud Modeling
 Creates models of point clouds
